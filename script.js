@@ -1,26 +1,20 @@
-function rolar() {
-    document.getElementById("introducao").scrollIntoView({
-        behavior: "smooth"
-    });
-}
+```javascript
+const cards = document.querySelectorAll(".card");
 
-function contador(id, final, velocidade){
-    let numero = 0;
+window.addEventListener("scroll", () => {
+  cards.forEach(card => {
+    const pos = card.getBoundingClientRect().top;
 
-    const intervalo = setInterval(() => {
-        numero += Math.ceil(final / 100);
+    if(pos < window.innerHeight - 100){
+      card.style.opacity = "1";
+      card.style.transform = "translateY(0)";
+    }
+  });
+});
 
-        if(numero >= final){
-            numero = final;
-            clearInterval(intervalo);
-        }
-
-        document.getElementById(id).innerText = numero + "+";
-    }, velocidade);
-}
-
-window.onload = () => {
-    contador("num1", 5000, 30);
-    contador("num2", 120, 50);
-    contador("num3", 300, 40);
-};
+cards.forEach(card => {
+  card.style.opacity = "0";
+  card.style.transform = "translateY(40px)";
+  card.style.transition = "all 0.8s ease";
+});
+```
