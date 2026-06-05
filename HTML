@@ -1,105 +1,328 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educação e Agronegócio Sustentável</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Educação e o Futuro Sustentável do Agronegócio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f8f3;
+    color:#333;
+    line-height:1.7;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-content h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    max-width:800px;
+    margin:auto;
+    font-size:1.2rem;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#4CAF50;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#2e7d32;
+    transform:translateY(-3px);
+}
+
+/* SEÇÕES */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:#2e7d32;
+    font-size:2.5rem;
+}
+
+/* INTRO */
+.intro{
+    text-align:center;
+    max-width:1000px;
+    margin:auto;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card h3{
+    color:#388e3c;
+    margin-bottom:15px;
+}
+
+/* ODS */
+.ods{
+    background:#e8f5e9;
+}
+
+.ods-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.ods-item{
+    background:white;
+    padding:25px;
+    border-left:5px solid #4CAF50;
+    border-radius:10px;
+}
+
+/* TECNOLOGIAS */
+.tech{
+    background:white;
+}
+
+.tech-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.tech-box{
+    background:linear-gradient(135deg,#43a047,#66bb6a);
+    color:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    font-weight:600;
+}
+
+/* CONCLUSÃO */
+.conclusion{
+    background:#2e7d32;
+    color:white;
+    text-align:center;
+}
+
+.conclusion h2{
+    margin-bottom:20px;
+}
+
+/* FOOTER */
+footer{
+    background:#1b5e20;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+    .hero-content h1{
+        font-size:2.3rem;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <header>
-        <div class="overlay">
-            <h1>🌱 Educação para um Agro Sustentável</h1>
-            <p>Conhecimento, inovação e sustentabilidade para o futuro do campo.</p>
-            <button onclick="rolar()">Saiba Mais</button>
-        </div>
-    </header>
-
-    <section id="introducao" class="card">
-        <h2>📚 Introdução</h2>
+<header class="hero">
+    <div class="hero-content">
+        <h1>🌱 Educação e o Futuro Sustentável do Agronegócio</h1>
         <p>
-            A educação é um dos pilares fundamentais para garantir um futuro sustentável
-            no agronegócio. Ela capacita profissionais para enfrentar desafios ambientais,
-            tecnológicos e produtivos, promovendo uma agricultura eficiente e responsável.
+            Formando profissionais capazes de produzir mais,
+            preservar o meio ambiente e construir um agronegócio
+            inovador para as futuras gerações.
         </p>
-    </section>
+        <a href="#introducao" class="btn">Explorar Conteúdo</a>
+    </div>
+</header>
 
-    <section class="card">
-        <h2>🌾 Importância da Educação para o Agro Sustentável</h2>
+<section id="introducao">
+    <div class="section-title">
+        <h2>Introdução</h2>
+    </div>
 
-        <div class="grid">
-            <div class="item">💧 Uso consciente da água</div>
-            <div class="item">🌱 Agricultura sustentável</div>
-            <div class="item">⚡ Redução do desperdício</div>
-            <div class="item">🤖 Inteligência Artificial</div>
-            <div class="item">🌍 Conservação ambiental</div>
-            <div class="item">📈 Maior produtividade</div>
+    <div class="intro">
+        <p>
+            A educação é um dos principais pilares para garantir um futuro
+            sustentável no agronegócio. Diante dos desafios das mudanças
+            climáticas, da preservação dos recursos naturais e da crescente
+            demanda por alimentos, torna-se essencial formar profissionais
+            preparados para produzir de maneira eficiente e ambientalmente responsável.
+        </p>
+    </div>
+</section>
+
+<section>
+    <div class="section-title">
+        <h2>🌾 A Importância da Educação para o Agro Sustentável</h2>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>💧 Uso Consciente dos Recursos</h3>
+            <p>Capacita produtores a utilizar água, energia e insumos de forma eficiente e sustentável.</p>
         </div>
-    </section>
 
-    <section class="card">
-        <h2>🎯 ODS Relacionados</h2>
-
-        <div class="ods-container">
-            <div class="ods">📖 Educação de Qualidade</div>
-            <div class="ods">🍽️ Fome Zero</div>
-            <div class="ods">♻️ Produção Responsável</div>
-            <div class="ods">🌡️ Ação Climática</div>
-            <div class="ods">🌳 Vida Terrestre</div>
-            <div class="ods">💼 Trabalho Decente</div>
+        <div class="card">
+            <h3>🌱 Agricultura Sustentável</h3>
+            <p>Promove técnicas que aumentam a produtividade sem degradar o meio ambiente.</p>
         </div>
-    </section>
 
-    <section class="card">
+        <div class="card">
+            <h3>📉 Redução de Desperdícios</h3>
+            <p>Incentiva o aproveitamento inteligente dos recursos disponíveis.</p>
+        </div>
+
+        <div class="card">
+            <h3>🤖 Tecnologia no Campo</h3>
+            <p>Estimula o uso de inteligência artificial, sensores e monitoramento digital.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌳 Conservação Ambiental</h3>
+            <p>Fortalece a proteção do solo, da biodiversidade e dos recursos hídricos.</p>
+        </div>
+
+        <div class="card">
+            <h3>📈 Maior Produtividade</h3>
+            <p>Permite produzir mais alimentos com menor impacto ambiental.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="ods">
+    <div class="section-title">
+        <h2>🎯 Relação com os Objetivos de Desenvolvimento Sustentável (ODS)</h2>
+    </div>
+
+    <div class="ods-grid">
+
+        <div class="ods-item">
+            <h3>📚 Educação de Qualidade</h3>
+            <p>Desenvolve competências voltadas para uma agricultura sustentável e inovadora.</p>
+        </div>
+
+        <div class="ods-item">
+            <h3>🌾 Fome Zero</h3>
+            <p>Aumenta a produção sustentável de alimentos e fortalece a segurança alimentar.</p>
+        </div>
+
+        <div class="ods-item">
+            <h3>♻ Consumo Responsável</h3>
+            <p>Promove o uso racional dos recursos naturais e reduz desperdícios.</p>
+        </div>
+
+        <div class="ods-item">
+            <h3>🌎 Ação Climática</h3>
+            <p>Prepara produtores para adaptação e mitigação dos impactos climáticos.</p>
+        </div>
+
+        <div class="ods-item">
+            <h3>🌳 Vida Terrestre</h3>
+            <p>Protege ecossistemas, florestas e biodiversidade nas áreas rurais.</p>
+        </div>
+
+        <div class="ods-item">
+            <h3>💼 Trabalho Decente</h3>
+            <p>Gera oportunidades, fortalece a economia rural e promove desenvolvimento sustentável.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="tech">
+    <div class="section-title">
         <h2>🚜 Tecnologia e Inovação no Campo</h2>
+    </div>
 
-        <div class="tech">
-            <div>📡 Agricultura de Precisão</div>
-            <div>🌐 Internet das Coisas (IoT)</div>
-            <div>🤖 Inteligência Artificial</div>
-            <div>☁️ Monitoramento Climático</div>
-            <div>🧪 Bioinsumos</div>
-            <div>♻️ Economia Circular</div>
-        </div>
-    </section>
+    <div class="tech-grid">
 
-    <section class="contador">
-        <h2>🌍 Impacto da Educação no Campo</h2>
+        <div class="tech-box">🌐 Internet das Coisas (IoT)</div>
 
-        <div class="numeros">
-            <div>
-                <h3 id="num1">0</h3>
-                <p>Profissionais Capacitados</p>
-            </div>
+        <div class="tech-box">📡 Agricultura de Precisão</div>
 
-            <div>
-                <h3 id="num2">0</h3>
-                <p>Tecnologias Sustentáveis</p>
-            </div>
+        <div class="tech-box">🤖 Inteligência Artificial</div>
 
-            <div>
-                <h3 id="num3">0</h3>
-                <p>Projetos Ambientais</p>
-            </div>
-        </div>
-    </section>
+        <div class="tech-box">☁ Monitoramento Climático</div>
 
-    <section class="card conclusao">
-        <h2>✅ Conclusão</h2>
+        <div class="tech-box">🧪 Bioinsumos</div>
 
-        <p>
-            A educação desempenha um papel estratégico na construção de um agronegócio
-            sustentável. Ao formar profissionais conscientes, inovadores e preparados
-            para utilizar novas tecnologias, ela contribui para a preservação ambiental,
-            a segurança alimentar e o desenvolvimento econômico das comunidades rurais.
-        </p>
-    </section>
+        <div class="tech-box">♻ Economia Circular</div>
 
-    <footer>
-        <p>🌱 Educação e Sustentabilidade no Agronegócio | Projeto Educacional</p>
-    </footer>
+    </div>
+</section>
 
-    <script src="script.js"></script>
+<section class="conclusion">
+    <h2>🌱 Conclusão</h2>
+
+    <p>
+        A educação desempenha papel estratégico na construção de um futuro
+        sustentável para o agronegócio. Ao formar profissionais conscientes,
+        capacitados e inovadores, ela contribui para a produção de alimentos,
+        preservação ambiental e desenvolvimento econômico. Assim, torna-se um
+        elemento essencial para o cumprimento dos Objetivos de Desenvolvimento
+        Sustentável da ONU e para a construção de um campo mais sustentável
+        para as futuras gerações.
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 | Educação e Sustentabilidade no Agronegócio 🌿</p>
+</footer>
+
 </body>
 </html>
